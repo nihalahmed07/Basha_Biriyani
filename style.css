@@ -334,6 +334,18 @@ nav .logo {
 }
 
 
+@media (max-width:1000px) {
+    .logo-container {
+        height: 30vh;
+    }
+}
+
+@media (max-width:560px) {
+    .logo-container {
+        height: 25vh;
+    }
+}
+
 
 
 /* Gallery Section */
@@ -352,11 +364,11 @@ nav .logo {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /* gap: 15px; */
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+    gap: 15px;
     padding: 20px 40px;
-    /* max-width: 1000px; */
-    /* margin: auto; */
+    max-width: 1000px;
+    margin: auto;
 }
 
 .gallery img {
@@ -394,6 +406,20 @@ nav .logo {
 }
 
 
+
+@media(min-width:640px) {
+
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media(min-width:1024px) {
+
+    .gallery {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
 
 /* Contact Us */
 
