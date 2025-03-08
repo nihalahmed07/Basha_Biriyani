@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order History</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #f97316;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f97316;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .back-btn {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-btn a {
+            background-color: #f97316;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .back-btn a:hover {
+            background-color: #f76100;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Your Order History 📜</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Date</th>
+                    <th>Items</th>
+                    <th>Total Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#12345</td>
+                    <td>08-Mar-2025</td>
+                    <td>Biryani, Burger, Coke</td>
+                    <td>₹750</td>
+                </tr>
+                <tr>
+                    <td>#12346</td>
+                    <td>07-Mar-2025</td>
+                    <td>Pizza, Fries, Juice</td>
+                    <td>₹600</td>
+                </tr>
+                <tr>
+                    <td>#12347</td>
+                    <td>06-Mar-2025</td>
+                    <td>Chicken Roll, Pepsi</td>
+                    <td>₹350</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="back-btn">
+            <a href="index.html">Back to Home 🏠</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
