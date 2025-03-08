@@ -380,7 +380,7 @@ nav .logo {
 }
 
 .gallery img:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 
 .lightbox {
@@ -695,4 +695,23 @@ form {
 
 .download_app_icon:hover {
     transform: scale(1.1);
+}
+
+/* Footer Adjustments */
+
+@media (max-width: 768px) {
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
 }
