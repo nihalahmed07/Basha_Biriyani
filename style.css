@@ -980,7 +980,7 @@ nav .logo {
 /* Menu section  */
 
 .bg-gray-100 {
-    display: none;
+    /* display: none; */
     padding: 20px 80px;
 }
 
@@ -1001,6 +1001,13 @@ nav .logo {
     color: white;
 }
 
+@media(max-width:500px) {
+    .bg-gray-100 {
+        /* display: none; */
+        padding: 10px;
+    }
+
+}
 
 /* Taglineb - Basha Biriyani */
 .logo-container {
