@@ -156,27 +156,6 @@ nav .logo {
     display: none;
 }
 
-/* Title Styling */
-.hero {
-    margin-top: 10px;
-}
-
-.hero-content {
-    /* text-align: center; */
-    /* margin-top: 35vh; */
-    /* color: white; */
-}
-
-
-.hero-title {
-    /* color: hsl(23, 61%, 86%); */
-    /* max-width: 12ch; */
-    /* margin-inline: auto; */
-}
-
-
-
-
 /* Button Styling */
 .button {
     display: inline-block;
