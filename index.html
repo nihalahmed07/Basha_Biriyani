@@ -12,8 +12,10 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <script src="https://kit.fontawesome.com/f5b6191954.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/f5b6191954.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com">
     </script>
 </head>
@@ -22,7 +24,69 @@
     <section class="banner">
         <img src="./Images/Banner.png" alt="Banner Image">
         <div class="content" id="home">
+            <!-- <aside class="sidebar">
+                <div class="sidebar-header">
+                    <img src="images/logo.png" alt="logo" />
+                    <h2>Basha Foods</h2>
+                </div>
+                <ul class="sidebar-links">
+                    <h4>
+                        <span>Main Menu</span>
+                        <div class="menu-separator"></div>
+                    </h4>
+                    <li>
+                        <a href="#home">
+                            <span class="material-symbols-outlined"> <i class="fa fa-home"></i>
+                            </span>Home</a>
+                    </li>
+                    <li>
+                        <a href="./cart page.html"><span class="material-symbols-outlined"> <i
+                                    class="fas fa-shopping-cart"></i>
+                            </span>Cart</a>
+                    </li>
+                    <li>
+                        <a href="./Track Order Page.html"><span class="material-symbols-outlined"> <i
+                                    class="fas fa-shipping-fast"></i>
+                            </span>Track Order</a>
+                    </li>
+                    <h4>
+                        <span>General</span>
+                        <div class="menu-separator"></div>
+                    </h4>
+                    <li>
+                        <a href="#menu"><span class="material-symbols-outlined"><i class="fas fa-utensils"></i>
+                            </span>Menu</a>
+                    </li>
+                    <li>
+                        <a href="#gallery"><span class="material-symbols-outlined"> <i class="fa-solid fa-image"></i>
+                            </span>Gallery</a>
+                    </li>
+                    <li>
+                        <a href="#contact-us"><span class="material-symbols-outlined"> Contact-Us </span>Contact-Us</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="material-symbols-outlined"> flag </span>All Reports</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="material-symbols-outlined">
+                                notifications_active </span>Notifications</a>
+                    </li>
+                </ul>
+                <div class="user-account">
+                    <div class="user-profile">
+                        <img src="images/profile-img.jpg" alt="Profile Image" />
+                        <div class="user-detail">
+                            <h3>Eva Murphy</h3>
+                            <span>Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </aside> -->
             <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
                 <!-- Location & Search -->
                 <div class="location-search">
                     <div class="location-container">
@@ -47,16 +111,9 @@
                             <option value="Athurkuppam">Athurkuppam</option>
                             <option value="Madhanakuppam">Madhanakuppam</option>
                             <option value="Veppankuppam">Veppankuppam</option>
-
-
                         </select>
                     </div>
                 </div>
-
-                <!-- <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label> -->
 
                 <!-- Call & Whatsapp -->
                 <ul class="navbar">
@@ -71,31 +128,6 @@
                     <img src="./images/Basha Transparent Logo R.png" alt="Logo">
                 </a>
             </nav>
-            <!-- <nav class="navbar" data-navbar>
-                <ul class="navbar-list">
-
-                    <li class="nav-item">
-                        <a href="#home" class="navbar-link" data-nav-link>Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#about" class="navbar-link" data-nav-link>About Us</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#food-menu" class="navbar-link" data-nav-link>Shop</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
-                    </li>
-
-                </ul>
-            </nav> -->
             <div class="title">
                 <h1>BASHA</h1>
                 <p>The King Of Biriyani!</p>
@@ -123,7 +155,7 @@
 
 
     <!-- Menu Section  -->
-    <section class="bg-gray-100">
+    <section class="bg-gray-100" id="menu">
 
         <div class="container mx-auto py-12">
             <div class="text-center mb-8">
@@ -690,10 +722,6 @@
     </footer>
 
     <script src="script.js"></script>
-    <button onclick="goHome()"
-        style="position: fixed; top: 10px; left: 10px; padding: 10px; background: #ff5733; color: white; border: none; border-radius: 5px; cursor: pointer;">Back
-        to Home</button>
-
 </body>
 
 </html>
