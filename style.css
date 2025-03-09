@@ -1419,3 +1419,34 @@ form {
         text-align: center;
     }
 }
+
+
+
+.cart-section {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.cart-items {
+    margin: 20px 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.checkout-btn {
+    padding: 10px 20px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color: #084298;
+}
