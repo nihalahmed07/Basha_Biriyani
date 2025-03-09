@@ -223,6 +223,22 @@ nav .logo {
     }
 }
 
+@media(max-width:1250px) {
+    .banner {
+        height: 100%;
+    }
+
+    .content {
+        height: 100vh;
+    }
+
+    .hero-container {
+        padding-top: 13rem;
+        padding-bottom: 12rem;
+    }
+
+}
+
 @media (max-width: 970px) {
     nav {
         height: 60px;
@@ -381,8 +397,8 @@ nav .logo {
     }
 
     .hero-container {
-        padding-top: 12rem;
-        padding-bottom: 12rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
     }
 }
 
@@ -396,27 +412,12 @@ nav .logo {
     }
 
     .hero-container {
-        padding-top: 12rem;
-        padding-bottom: 12rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
     }
 
 }
 
-@media(max-width:760px) {
-    .banner {
-        height: 100%;
-    }
-
-    .content {
-        height: 70vh;
-    }
-
-    .hero-container {
-        padding-top: 12rem;
-        padding-bottom: 12rem;
-    }
-
-}
 
 @media (max-width: 698px) {
     nav {
