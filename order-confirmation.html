@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .container h2 {
+            color: #f97316;
+        }
+
+        .order-details {
+            margin: 20px 0;
+        }
+
+        .order-details p {
+            margin: 5px 0;
+        }
+
+        .back-home-btn {
+            background-color: #f97316;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .back-home-btn:hover {
+            background-color: #f76100;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>🎉 Order Placed Successfully!</h2>
+        <p>Thank you for your purchase. Your order will be delivered soon.</p>
+
+        <div class="order-details">
+            <h3>Order Details:</h3>
+            <p><strong>Order ID:</strong> #<span id="order-id"></span></p>
+            <p><strong>Total Amount:</strong> ₹<span id="total-amount"></span></p>
+            <p><strong>Payment Method:</strong> <span id="payment-method"></span></p>
+        </div>
+
+        <a href="thankyou.html" class="back-home-btn">Back to Home</a>
+    </div>
+
+    <script>
+        // let total = localStorage.getItem('total') || 0;
+        let paymentMethod = localStorage.getItem('paymentMethod') || 'Not Selected';
+        let orderId = Math.floor(Math.random() * 1000000);
+
+        document.getElementById('order-id').innerText = orderId;
+        document.getElementById('total-amount').innerText = total;
+        document.getElementById('payment-method').innerText = paymentMethod;
+
+        // Clear the cart after order placement
+        localStorage.removeItem('cart');
+        localStorage.removeItem('total');
+        localStorage.removeItem('paymentMethod');
+
+        // Function to send order details to Google Sheets
+        function sendOrderToGoogleSheets() {
+            const orderDetails = {
+                orderId: orderId,
+                totalAmount: total,
+                paymentMethod: paymentMethod
+            };
+
+            fetch('YOUR_GOOGLE_SHEET_WEBHOOK_URL', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(orderDetails)
+            })
+                .then(response => {
+                    if (response.ok) {
+                        console.log('Order details sent to Google Sheets successfully.');
+                    } else {
+                        console.error('Error sending order details to Google Sheets.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        }
+
+        // Call the function to send order details
+        sendOrderToGoogleSheets();
+    </script>
+</body>
+
+</html>
