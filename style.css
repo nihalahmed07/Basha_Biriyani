@@ -828,6 +828,7 @@ nav .logo {
 /* Menu section  */
 
 .bg-gray-100 {
+    display: none;
     padding: 20px 80px;
 }
 
