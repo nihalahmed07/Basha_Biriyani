@@ -1,15 +1,42 @@
-document.getElementById("contactForm").addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent default form submission
+//Contact Form
 
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let subject = document.getElementById("subject").value;
-    let message = document.getElementById("message").value;
-
-    let mailtoLink = `mailto:n.nihalahmed1@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\n" + message)}`;
-    window.location.href = mailtoLink; // Opens email app
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    
+    fetch("https://script.google.com/macros/s/AKfycbxVjYHW3xx8qiZl38CVk2-orXgTkNYqlssH7TMFkIymUL1asFYrOlC6OClbYGTJSrvW/exec", {
+        method: "POST",
+        body: new FormData(this)
+    })
+    .then(response => response.text())
+    .then(data => {
+        alert("Message sent successfully!");
+        document.getElementById("contactForm").reset();
+    })
+    .catch(error => {
+        alert("Something went wrong. Please try again.");
+    });
 });
 
+//Sends to Whatsapp
+
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+ e.preventDefault();
+
+ // Capture form data
+ var name = document.getElementById('name').value;
+ var email = document.getElementById('email').value;
+ var subject = document.getElementById('subject').value;
+ var message = document.getElementById('message').value;
+
+ // Format WhatsApp message
+ var whatsappMessage = `📩 *New Contact Form Submission*%0A%0A👤 *Name:* ${name}%0A📧 *Email:* ${email}%0A📄 *Subject:* ${subject}%0A💬 *Message:* ${message}`;
+
+ // WhatsApp API URL
+ var whatsappURL = `https://wa.me/917010933659?text=${whatsappMessage}`;
+
+ // Redirect to WhatsApp
+ window.open(whatsappURL, '_blank');
+});
 
 function openLightbox(img) {
     document.getElementById('lightbox-img').src = img.src;
