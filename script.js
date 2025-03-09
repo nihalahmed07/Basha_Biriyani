@@ -1,6 +1,5 @@
-//Contact Form
-
-document.getElementById("contactForm").addEventListener("submit", function(e){
+// Contact Form
+document.getElementById("contactForm").addEventListener("submit", function(e) {
     e.preventDefault();
     
     fetch("https://script.google.com/macros/s/AKfycbxVjYHW3xx8qiZl38CVk2-orXgTkNYqlssH7TMFkIymUL1asFYrOlC6OClbYGTJSrvW/exec", {
@@ -17,56 +16,105 @@ document.getElementById("contactForm").addEventListener("submit", function(e){
     });
 });
 
-//Sends to Whatsapp
-
+// Sends to WhatsApp
 document.getElementById('contactForm').addEventListener('submit', function (e) {
- e.preventDefault();
+    e.preventDefault();
 
- // Capture form data
- var name = document.getElementById('name').value;
- var email = document.getElementById('email').value;
- var subject = document.getElementById('subject').value;
- var message = document.getElementById('message').value;
+    // Capture form data
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
 
- // Format WhatsApp message
- var whatsappMessage = `📩 *New Contact Form Submission*%0A%0A👤 *Name:* ${name}%0A📧 *Email:* ${email}%0A📄 *Subject:* ${subject}%0A💬 *Message:* ${message}`;
+    // Format WhatsApp message
+    var whatsappMessage = `📩 *New Contact Form Submission*%0A%0A👤 *Name:* ${name}%0A📧 *Email:* ${email}%0A📄 *Subject:* ${subject}%0A💬 *Message:* ${message}`;
 
- // WhatsApp API URL
- var whatsappURL = `https://wa.me/917010933659?text=${whatsappMessage}`;
+    // WhatsApp API URL
+    var whatsappURL = `https://wa.me/917010933659?text=${whatsappMessage}`;
 
- // Redirect to WhatsApp
- window.open(whatsappURL, '_blank');
+    // Redirect to WhatsApp
+    window.open(whatsappURL, '_blank');
 });
 
+// Lightbox Functionality
 function openLightbox(img) {
     document.getElementById('lightbox-img').src = img.src;
     document.getElementById('lightbox').classList.add('active');
 }
+
 function closeLightbox() {
     document.getElementById('lightbox').classList.remove('active');
 }
 
-
+// Filter Menu Items
 document.addEventListener('DOMContentLoaded', function () {
     const buttons = document.querySelectorAll('.filter-btn');
     const cards = document.querySelectorAll('.card');
     buttons.forEach(button => {
-     button.addEventListener('click', function () {
-      buttons.forEach(btn => btn.classList.remove('active'));
-      this.classList.add('active');
-      const filter = this.textContent.trim().toLowerCase();
-      cards.forEach(card => {
-       if (filter === 'all') {
-        card.style.display = 'block';
-       } else {
-        const category = card.getAttribute('data-category').toLowerCase();
-        if (category === filter) {
-         card.style.display = 'block';
-        } else {
-         card.style.display = 'none';
-        }
-       }
-      });
-     });
+        button.addEventListener('click', function () {
+            buttons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            const filter = this.textContent.trim().toLowerCase();
+            cards.forEach(card => {
+                if (filter === 'all') {
+                    card.style.display = 'block';
+                } else {
+                    const category = card.getAttribute('data-category').toLowerCase();
+                    card.style.display = category === filter ? 'block' : 'none';
+                }
+            });
+        });
     });
-   });
+});
+
+// Cart Functionality
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+// Function to add item to cart
+function addToCart(item) {
+    const existingItemIndex = cart.findIndex(cartItem => cartItem.name === item.name);
+    
+    if (existingItemIndex > -1) {
+        cart[existingItemIndex].quantity += 1; // Increase quantity if item exists
+    } else {
+        item.quantity = 1; // Set initial quantity to 1
+        cart.push(item); // Add new item to cart
+    }
+    
+    saveCart(); // Save updated cart to local storage
+}
+
+// Function to save cart to local storage
+function saveCart() {
+    localStorage.setItem('cart', JSON.stringify(cart));
+    calculateTotal(); // Update total whenever the cart is saved
+}
+
+// Function to calculate total
+function calculateTotal() {
+    let total = cart.reduce((accumulator, item) => accumulator + (item.price * item.quantity), 0);
+    document.getElementById('cart-total').innerText = total;
+}
+
+// Add event listeners to order buttons
+document.querySelectorAll('.order-btn').forEach((button) => {
+    button.addEventListener('click', () => {
+        const card = button.closest('.card');
+        const itemName = card.querySelector('h3').innerText;
+        const itemPrice = parseInt(card.querySelector('.text-orange-500').innerText.replace('PRICE: ₹', '').trim());
+        const itemImage = card.querySelector('img').src; // Assuming there's an image in the card
+
+        addToCart({ name: itemName, price: itemPrice, image: itemImage });
+    });
+});
+
+// Function to go to cart
+function goToCart() {
+    window.location.href = 'cart.html'; // Ensure this matches the filename of your cart page
+}
+function goToTrackOrder() {
+    window.location.href = 'track order.html'; // Redirect to track order page
+}
+
+// Initial calculation of total on page load
+calculateTotal();
