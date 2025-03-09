@@ -19,22 +19,22 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
 // Sends to WhatsApp
 document.getElementById('contactForm').addEventListener('submit', function (e) {
     e.preventDefault();
-
+   
     // Capture form data
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
     var subject = document.getElementById('subject').value;
     var message = document.getElementById('message').value;
-
+   
     // Format WhatsApp message
     var whatsappMessage = `📩 *New Contact Form Submission*%0A%0A👤 *Name:* ${name}%0A📧 *Email:* ${email}%0A📄 *Subject:* ${subject}%0A💬 *Message:* ${message}`;
-
+   
     // WhatsApp API URL
     var whatsappURL = `https://wa.me/917010933659?text=${whatsappMessage}`;
-
+   
     // Redirect to WhatsApp
     window.open(whatsappURL, '_blank');
-});
+   });
 
 // Lightbox Functionality
 function openLightbox(img) {
