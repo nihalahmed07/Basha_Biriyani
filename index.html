@@ -145,7 +145,8 @@
                             bite!
                         </p>
                         <button
-                            class="bg-yellow-500 text-red-900 font-bold py-3 px-6 rounded-full shadow-lg hover:bg-yellow-600 transition">
+                            class="bg-yellow-500 text-red-900 font-bold py-3 px-6 rounded-full shadow-lg hover:bg-yellow-600 transition"
+                            onclick="location.href='#menu'">
                             Order Now
                         </button>
                     </div>
@@ -158,7 +159,7 @@
     </section>
 
 
-    <!-- <section class="banner2">
+    <section class="banner2">
         <div class="banner2-left">
             <h2>HYDERABADI CHICKEN BIRYANI</h2>
             <img src="./Images/Handi Hot.jpg" alt="">
@@ -173,7 +174,7 @@
             <img src="./Images/Hyderabad.png" alt="Hyderabad Charminar" class="charminar-img">
             <img src="./Images/Nizam.jpg" alt="Nizam" class="nizam-img">
         </div>
-    </section> -->
+    </section>
 
 
     <!-- Menu Section  -->
@@ -627,13 +628,17 @@
 
             <div class="contact-content">
                 <!-- Contact Form -->
-                <form id="contactForm" class="contact-form">
-                    <input type="text" id="name" placeholder="Your Name" required>
-                    <input type="email" id="email" placeholder="Your Email" required>
-                    <input type="text" id="subject" placeholder="Subject" required>
-                    <textarea id="message" placeholder="Your Message" required></textarea>
+                <form id="contactForm" class="contact-form"
+                    action="https://script.google.com/macros/s/AKfycbxVjYHW3xx8qiZl38CVk2-orXgTkNYqlssH7TMFkIymUL1asFYrOlC6OClbYGTJSrvW/exec"
+                    method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
                     <button type="submit">Send Message</button>
                 </form>
+
+
 
                 <!-- Contact Info -->
                 <div class="contact-info">
