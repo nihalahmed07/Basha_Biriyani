@@ -177,6 +177,22 @@ nav .logo {
 
 /* Navbar Adjustments */
 
+@media(min-width:1250px) {
+    .banner {
+        height: 100%;
+    }
+
+    .content {
+        height: 100vh;
+    }
+
+    .hero-container {
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+    }
+
+}
+
 @media(max-width:1250px) {
     .banner {
         height: 100%;
