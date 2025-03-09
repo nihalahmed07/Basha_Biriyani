@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Order</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #f97316;
+        }
+
+        .status-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .status {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .status span {
+            font-weight: bold;
+        }
+
+        .progress-bar {
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 15px;
+            background-color: #f97316;
+            width: 70%;
+            /* Dynamic width based on status */
+        }
+
+        .back-btn {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-btn a {
+            background-color: #f97316;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .back-btn a:hover {
+            background-color: #f76100;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Track Your Order 📦</h2>
+
+        <div class="status-box">
+            <div class="status">
+                <span>Order ID:</span>
+                <span>#12345</span>
+            </div>
+            <div class="status">
+                <span>Date:</span>
+                <span>08-Mar-2025</span>
+            </div>
+            <div class="status">
+                <span>Status:</span>
+                <span>Out for Delivery 🚚</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+        <div class="back-btn">
+            <a href="index.html">Back to Home 🏠</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
