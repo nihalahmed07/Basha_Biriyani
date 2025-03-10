@@ -657,13 +657,13 @@ nav .logo {
     } */
 
     /* Logo */
-    nav .logo {
+    /* nav .logo {
         margin-top: 40px;
     }
 
     .logo img {
         width: 70px;
-    }
+    } */
 }
 
 @media(max-width:420px) {
