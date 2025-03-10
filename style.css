@@ -952,16 +952,18 @@ nav .logo {
     display: flex;
     color: white;
     font-size: 20px;
+    /* font-size: 1.5vw; */
     /* position: relative; */
-    flex-basis: 44%;
+    flex-basis: 50%;
     z-index: 3;
+    /* border: 1px solid; */
 }
 
 .banner2 .banner2-right .charminar-img {
     position: absolute;
     height: 480px;
     /* width: 270px; */
-    top: 50px;
+    /* top: 50px; */
     right: 15px;
     opacity: 0.8;
 }
