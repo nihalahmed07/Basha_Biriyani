@@ -1018,7 +1018,7 @@ nav .logo {
 
 @media (max-width:450px) {
     .banner2 {
-        height: 90vh;
+        height: 435px;
     }
 
     .banner2 .banner2-left h2 {
@@ -1045,7 +1045,7 @@ nav .logo {
 
 @media (max-width:400px) {
     .banner2 {
-        height: 80vh;
+        height: 435px;
     }
 
     .banner2 .banner2-left h2 {
