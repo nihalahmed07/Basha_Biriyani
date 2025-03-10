@@ -142,7 +142,7 @@ nav .logo {
 }
 
 
-/* Button Styling */
+/* Button Styling
 .button {
     display: inline-block;
     margin-top: 5vh;
@@ -159,7 +159,7 @@ nav .logo {
     color: white;
     background-color: black;
     box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
-}
+} */
 
 /* Call & Whatsapp in Banner */
 
@@ -1099,6 +1099,10 @@ nav .logo {
 
 }
 
+#toast {
+    transition: opacity 0.5s ease-in-out;
+}
+
 /* Taglineb - Basha Biriyani */
 .logo-container {
     width: 100%;
@@ -1437,15 +1441,6 @@ form {
     /* position: relative; */
     /* text-align: center; */
 }
-
-/* .footer-section h4::after {
-    content: "";
-    display: block;
-    width: 70px;
-    height: 2px;
-    background: white;
-    margin: 5px auto;
-} */
 
 .footer-section ul {
     list-style: none;

@@ -71,6 +71,8 @@ document.addEventListener('DOMContentLoaded', function () {
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 // Function to add item to cart
+
+
 function addToCart(item) {
     const existingItemIndex = cart.findIndex(cartItem => cartItem.name === item.name);
     
@@ -82,8 +84,25 @@ function addToCart(item) {
     }
     
     saveCart(); // Save updated cart to local storage
+
+    // Show toast notification
+    showToast(`${item.name} has been added to your cart!`);
 }
 
+function showToast(message) {
+    const toast = document.getElementById('toast');
+    toast.innerText = message;
+    toast.style.display = 'block';
+    toast.style.opacity = '1';
+
+    // Hide the toast after 3 seconds
+    setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => {
+            toast.style.display = 'none';
+        }, 500); // Wait for fade out to finish
+    }, 3000);
+}
 // Function to save cart to local storage
 function saveCart() {
     localStorage.setItem('cart', JSON.stringify(cart));
