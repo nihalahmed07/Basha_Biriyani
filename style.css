@@ -570,6 +570,7 @@ nav .logo {
     }
 
     .navbar a {
+        display: none;
         font-size: 8px;
         padding: 6px 7px;
     }
@@ -580,7 +581,7 @@ nav .logo {
 
     /* Location And Search  */
     .location-search {
-        gap: 7px;
+        gap: 8px;
     }
 
     /* Location Section */
