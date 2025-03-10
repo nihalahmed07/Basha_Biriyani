@@ -976,6 +976,304 @@ nav .logo {
     opacity: 0.8;
 }
 
+@media(max-width:992px) {
+
+    .banner2 {
+        height: 100vh;
+    }
+
+    .banner2 .banner2-left h2 {
+        font-size: 30px;
+    }
+
+    .banner2 .banner2-left img {
+        width: 420px;
+        height: 420px;
+    }
+
+    .banner2 .banner2-right .charminar-img {
+        height: 400px;
+    }
+
+    .banner2 .banner2-right .nizam-img {
+        height: 450px;
+    }
+
+    .banner2 .banner2-right p {
+        font-size: 19px;
+    }
+}
+
+@media (max-width:930px) {
+    .banner2 {
+        height: 100vh;
+    }
+
+    .banner2 .banner2-left h2 {
+        font-size: 28px;
+    }
+
+    .banner2 .banner2-left img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .banner2 .banner2-right .charminar-img {
+        height: 380px;
+    }
+
+    .banner2 .banner2-right .nizam-img {
+        height: 420px;
+    }
+
+    .banner2 .banner2-right p {
+        font-size: 19px;
+    }
+}
+
+@media (max-width:868px) {
+    .banner2 {
+        height: 100vh;
+    }
+
+    .banner2 .banner2-left h2 {
+        font-size: 26px;
+    }
+
+    .banner2 .banner2-left img {
+        width: 380px;
+        height: 380px;
+    }
+
+    .banner2 .banner2-right .charminar-img {
+        height: 370px;
+    }
+
+    .banner2 .banner2-right .nizam-img {
+        height: 410px;
+    }
+
+    .banner2 .banner2-right p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width:807px) {
+    .banner2 {
+        height: 100vh;
+    }
+
+    .banner2 .banner2-left h2 {
+        font-size: 24px;
+    }
+
+    .banner2 .banner2-left img {
+        width: 360px;
+        height: 360px;
+    }
+
+    .banner2 .banner2-right .charminar-img {
+        height: 340px;
+    }
+
+    .banner2 .banner2-right .nizam-img {
+        height: 390px;
+    }
+
+    .banner2 .banner2-right p {
+        font-size: 15.5px;
+    }
+}
+
+@media (max-width:744px) {
+    .banner2 {
+        height: 100vh;
+    }
+
+    .banner2 .banner2-left h2 {
+        font-size: 22px;
+    }
+
+    .banner2 .banner2-left img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .banner2 .banner2-right .charminar-img {
+        height: 310px;
+    }
+
+    .banner2 .banner2-right .nizam-img {
+        height: 360px;
+    }
+
+    .banner2 .banner2-right p {
+        font-size: 14.25px;
+    }
+}
+
+@media (max-width:682px) {
+    .banner2 {
+        height: 100vh;
+    }
+
+    .banner2 .banner2-left h2 {
+        font-size: 20px;
+    }
+
+    .banner2 .banner2-left img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .banner2 .banner2-right .charminar-img {
+        height: 300px;
+    }
+
+    .banner2 .banner2-right .nizam-img {
+        height: 350px;
+    }
+
+    .banner2 .banner2-right p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:620px) {
+    .banner2 {
+        height: 100vh;
+    }
+
+    .banner2 .banner2-left h2 {
+        font-size: 18px;
+    }
+
+    .banner2 .banner2-left img {
+        width: 270px;
+        height: 270px;
+    }
+
+    .banner2 .banner2-right .charminar-img {
+        height: 260px;
+    }
+
+    .banner2 .banner2-right .nizam-img {
+        height: 310px;
+    }
+
+    .banner2 .banner2-right p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width:558px) {
+    .banner2 {
+        height: 100vh;
+    }
+
+    .banner2 .banner2-left h2 {
+        font-size: 16px;
+    }
+
+    .banner2 .banner2-left img {
+        width: 270px;
+        height: 270px;
+    }
+
+    .banner2 .banner2-right .charminar-img {
+        height: 260px;
+    }
+
+    .banner2 .banner2-right .nizam-img {
+        height: 310px;
+    }
+
+    .banner2 .banner2-right p {
+        font-size: 11px;
+    }
+}
+
+@media (max-width:496px) {
+    .banner2 {
+        height: 90vh;
+    }
+
+    .banner2 .banner2-left h2 {
+        font-size: 14.5px;
+    }
+
+    .banner2 .banner2-left img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .banner2 .banner2-right .charminar-img {
+        height: 230px;
+    }
+
+    .banner2 .banner2-right .nizam-img {
+        height: 265px;
+    }
+
+    .banner2 .banner2-right p {
+        font-size: 9.7px;
+    }
+}
+
+@media (max-width:450px) {
+    .banner2 {
+        height: 90vh;
+    }
+
+    .banner2 .banner2-left h2 {
+        font-size: 12.5px;
+    }
+
+    .banner2 .banner2-left img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .banner2 .banner2-right .charminar-img {
+        height: 210px;
+    }
+
+    .banner2 .banner2-right .nizam-img {
+        height: 230px;
+    }
+
+    .banner2 .banner2-right p {
+        font-size: 8.7px;
+    }
+}
+
+@media (max-width:400px) {
+    .banner2 {
+        height: 80vh;
+    }
+
+    .banner2 .banner2-left h2 {
+        font-size: 10px;
+    }
+
+    .banner2 .banner2-left img {
+        width: 155px;
+        height: 155px;
+    }
+
+    .banner2 .banner2-right .charminar-img {
+        height: 160px;
+    }
+
+    .banner2 .banner2-right .nizam-img {
+        height: 180px;
+    }
+
+    .banner2 .banner2-right p {
+        font-size: 7px;
+    }
+}
+
 
 /* Menu section  */
 
