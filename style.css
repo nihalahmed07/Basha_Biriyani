@@ -424,14 +424,14 @@ nav .logo {
 
 @media (max-width: 430px) {
     nav {
-        height: 60px;
+        height: 70px;
         padding: 0 40px;
     }
 
     /* Location Section */
     .location-container {
         gap: 7px;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     /* Logo */
@@ -450,22 +450,30 @@ nav .logo {
 
     .hero-container {
         padding-top: 220px;
-        padding-bottom: 5rem;
+        /* padding-bottom: 5rem; */
     }
 }
 
-@media(max-width:30px) {
+@media(max-width:420px) {
     .banner {
         height: 100%;
     }
 
     .content {
-        height: 540px;
+        height: 600px;
     }
 
     .hero-container {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-top: 220px;
+        /* padding-bottom: 5rem; */
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-text {
+        font-size: 14px;
     }
 
 }
