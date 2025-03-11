@@ -401,13 +401,6 @@ nav .logo {
         padding-top: 160px
     }
 
-
-
-    /* Logo */
-    /* nav .logo {
-        margin-top: 50px;
-    } */
-
     .logo img {
         width: 80px;
     }
@@ -429,44 +422,39 @@ nav .logo {
     }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 430px) {
     nav {
         height: 60px;
-        padding: 0 20px;
+        padding: 0 40px;
     }
-
-    /* .navbar {
-        gap: 5px;
-    }
-
-    .navbar a {
-        font-size: 8px;
-        padding: 3px 5px;
-    }
-
-    .content nav i {
-        font-size: 8px;
-    } */
-
-    /* Location And Search  */
-    /* .location-search {
-        gap: 6px;
-    } */
 
     /* Location Section */
-    /* .location-container {
+    .location-container {
         gap: 7px;
-        font-size: 8px;
-    } */
+        font-size: 12px;
+    }
 
     /* Logo */
 
     .logo img {
-        width: 60px;
+        width: 70px;
+    }
+
+    .banner {
+        height: 100%;
+    }
+
+    .content {
+        height: 540px;
+    }
+
+    .hero-container {
+        padding-top: 220px;
+        padding-bottom: 5rem;
     }
 }
 
-@media(max-width:420px) {
+@media(max-width:30px) {
     .banner {
         height: 100%;
     }
