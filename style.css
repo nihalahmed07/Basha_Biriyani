@@ -500,11 +500,16 @@ nav .logo {
     }
 
     .hero-title {
-        font-size: 32px !important;
+        font-size: 34px !important;
     }
 
     .hero-text {
+        font-size: 14px !important;
+    }
+
+    .banner-btn {
         font-size: 12px !important;
+        padding: 10px 20px !important;
     }
 
 }
