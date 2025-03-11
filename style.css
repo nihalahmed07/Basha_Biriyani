@@ -1196,16 +1196,17 @@ form {
 }
 
 .footer-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    /* justify-content: space-around; */
     padding: 0 0 10px;
     position: relative;
-    z-index: 0
+    z-index: 0;
+    text-align: center;
 }
 
 .footer-section {
-    text-align: left;
+    /* text-align: left; */
     margin: 35px 20px 0px;
     z-index: 1
 }
@@ -1214,12 +1215,15 @@ form {
 
 
 .detail-content {
-    padding-left: 5%
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .detail-content .follow-apps {
-    align-items: center;
     display: flex;
+    align-items: center;
     margin-top: 10px
 }
 
@@ -1312,24 +1316,29 @@ form {
 }
 
 /* Footer Adjustments */
-
-@media (max-width: 768px) {
+@media(min-width:540px) {
 
     .footer-content {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .footer-section {
-        text-align: center;
+        text-align: left;
     }
 
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
+
 }
 
+@media(min-width:780px) {
+
+    .footer-content {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    .footer-section {
+        text-align: left;
+    }
+}
 
 
 .cart-section {
