@@ -463,8 +463,12 @@ nav .logo {
         height: 600px;
     }
 
+    .logo img {
+        width: 80px;
+    }
+
     .hero-container {
-        padding-top: 220px;
+        padding-top: 250px;
         /* padding-bottom: 5rem; */
     }
 
@@ -473,23 +477,34 @@ nav .logo {
     }
 
     .hero-text {
-        font-size: 14px !important;
+        font-size: 16px !important;
     }
 
 }
 
-@media(max-width:370px) {
+@media(max-width:375px) {
     .banner {
         height: 100%;
     }
 
     .content {
-        height: 90vh;
+        height: 600px;
+    }
+
+    .logo img {
+        width: 80px;
     }
 
     .hero-container {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
+        padding-top: 250px;
+    }
+
+    .hero-title {
+        font-size: 32px !important;
+    }
+
+    .hero-text {
+        font-size: 12px !important;
     }
 
 }
