@@ -12,6 +12,13 @@
     background-color: black;
 }
 
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./fonts/BebasNeue-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 .banner {
     display: flex;
     justify-content: center;
@@ -44,7 +51,7 @@
 /* Navbar Styling */
 nav {
     width: 100%;
-    height: 60px;
+    height: 80px;
     position: fixed;
     background-color: black;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.15);
@@ -74,22 +81,6 @@ nav {
 .location-container i {
     font-size: 18px;
     color: orange;
-}
-
-/* Search Box */
-.search-box {
-    display: flex;
-    align-items: center;
-    background: white;
-    padding: 5px 10px;
-    border-radius: 4px;
-}
-
-.search-box select {
-    border: none;
-    outline: none;
-    /* padding: 5px; */
-    width: 200px;
 }
 
 /* Navbar Links */
@@ -131,35 +122,15 @@ nav {
 /* Logo */
 nav .logo {
     align-items: center;
-    margin-top: 60px;
+    /* margin-top: 60px; */
     z-index: 150;
 }
 
 .logo img {
-    width: 154px;
+    width: 100px;
     /* margin-top: 10px; */
     object-fit: cover;
 }
-
-
-/* Button Styling
-.button {
-    display: inline-block;
-    margin-top: 5vh;
-    font-size: 25px;
-    padding: 10px 30px;
-    color: black;
-    background-color: white;
-    border-radius: 20px;
-    transition: 0.3s ease;
-}
-
-.button:hover {
-    transform: scale(1.1);
-    color: white;
-    background-color: black;
-    box-shadow: 5px 10px 30px rgba(0, 0, 0, 0.4);
-} */
 
 /* Call & Whatsapp in Banner */
 
@@ -179,8 +150,8 @@ nav .logo {
     }
 
     .hero-container {
-        padding-top: 15rem;
-        padding-bottom: 15rem;
+        padding-top: 340px;
+        /* padding-bottom: 15rem; */
     }
 
 }
@@ -195,8 +166,8 @@ nav .logo {
     }
 
     .hero-container {
-        padding-top: 12rem;
-        padding-bottom: 12rem;
+        padding-top: 320px;
+        /* padding-bottom: 12rem; */
     }
 
 }
@@ -223,27 +194,10 @@ nav .logo {
         font-size: 18px;
     }
 
-    /* Search Box */
-    .search-box {
-        padding: 4px 8px;
-        border-radius: 4px;
-    }
-
-    .search-box select {
-        font-size: 15px;
-        border: none;
-        outline: none;
-        /* padding: 5px; */
-        width: 170px;
-    }
-
     /* Logo */
-    nav .logo {
-        margin-top: 60px;
-    }
 
     .logo img {
-        width: 144px;
+        width: 100px;
     }
 }
 
@@ -259,8 +213,8 @@ nav .logo {
     }
 
     .hero-container {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
+        padding-top: 260px;
+        /* padding-bottom: 8rem; */
     }
 
 }
@@ -291,27 +245,10 @@ nav .logo {
         font-size: 18px;
     } */
 
-    /* Search Box */
-    .search-box {
-        padding: 4px 7px;
-        border-radius: 4px;
-    }
-
-    .search-box select {
-        font-size: 14px;
-        border: none;
-        outline: none;
-        /* padding: 5px; */
-        width: 145px;
-    }
-
     /* Logo */
-    nav .logo {
-        margin-top: 60px;
-    }
 
     .logo img {
-        width: 136px;
+        width: 80px;
     }
 }
 
@@ -322,7 +259,7 @@ nav .logo {
     }
 
     .navbar a {
-        font-size: 13px;
+        font-size: 14px;
         padding: 7px 10px;
     }
 
@@ -341,27 +278,11 @@ nav .logo {
             font-size: 18px;
         } */
 
-    /* Search Box */
-    .search-box {
-        padding: 3px 7px;
-        border-radius: 4px;
-    }
-
-    .search-box select {
-        font-size: 13px;
-        border: none;
-        outline: none;
-        /* padding: 5px; */
-        width: 115px;
-    }
-
     /* Logo */
-    nav .logo {
-        margin-top: 60px;
-    }
+
 
     .logo img {
-        width: 130px;
+        width: 80px;
     }
 }
 
@@ -391,27 +312,12 @@ nav .logo {
             font-size: 18px;
         } */
 
-    /* Search Box */
-    .search-box {
-        padding: 3px 6px;
-        border-radius: 4px;
-    }
 
-    .search-box select {
-        font-size: 12px;
-        border: none;
-        outline: none;
-        /* padding: 5px; */
-        width: 100px;
-    }
 
     /* Logo */
-    nav .logo {
-        margin-top: 60px;
-    }
 
     .logo img {
-        width: 130px;
+        width: 80px;
     }
 
     .banner {
@@ -419,35 +325,55 @@ nav .logo {
     }
 
     .content {
-        height: 90vh;
+        height: 550px;
     }
 
     .hero-container {
-        padding-top: 7rem;
-        padding-bottom: 7rem;
+        padding-top: 210px;
+        /* padding-bottom: 7rem; */
     }
 }
 
-@media(max-width:760px) {
+@media(max-width:765px) {
     .banner {
         height: 100%;
     }
 
     .content {
-        height: 70vh;
+        height: 450px;
     }
 
     .hero-container {
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+        padding-top: 180px
     }
 
 }
 
+@media (max-width: 630px) {
 
-@media (max-width: 698px) {
+    .content {
+        height: 450px;
+    }
+
+    .hero-container {
+        padding-top: 150px
+    }
+
+
+
+    /* Logo */
+    /* nav .logo {
+        margin-top: 50px;
+    } */
+
+    .logo img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 596px) {
     nav {
-        height: 50px;
+        height: 60px;
         padding: 0 35px;
     }
 
@@ -467,151 +393,45 @@ nav .logo {
         font-size: 11px;
     }
 
-    /* Search Box */
-    .search-box {
-        padding: 3px 6px;
-        border-radius: 4px;
-    }
-
-    .search-box select {
-        font-size: 11px;
-        border: none;
-        outline: none;
-        /* padding: 5px; */
-        width: 80px;
-    }
-
-    /* Logo */
-    nav .logo {
-        margin-top: 50px;
-    }
-
-    .logo img {
-        width: 110px;
-    }
-}
-
-@media (max-width: 596px) {
-
-    .banner {
-        height: 100%;
-    }
-
     .content {
-        height: 75vh;
+        height: 450px;
     }
 
     .hero-container {
-        padding-top: 6rem;
-        padding-bottom: 0;
+        padding-top: 160px
     }
 
-    nav {
-        height: 45px;
-        padding: 0 25px;
-    }
 
-    .navbar a {
-        font-size: 11px;
-        padding: 6px 7px;
-    }
-
-    .content nav i {
-        font-size: 12px;
-    }
-
-    /* Location And Search  */
-    .location-search {
-        gap: 7px;
-    }
-
-    /* Location Section */
-    .location-container {
-        gap: 8px;
-        font-size: 9px;
-    }
-
-    /* Search Box */
-    .search-box {
-        padding: 3px 6px;
-        border-radius: 4px;
-    }
-
-    .search-box select {
-        font-size: 10px;
-        border: none;
-        outline: none;
-        /* padding: 5px; */
-        width: 65px;
-    }
 
     /* Logo */
-    nav .logo {
-        margin-top: 45px;
-    }
+    /* nav .logo {
+        margin-top: 50px;
+    } */
 
     .logo img {
-        width: 90px;
+        width: 80px;
     }
 }
 
-@media (max-width: 496px) {
-    nav {
-        height: 40px;
-        padding: 0 20px;
-    }
-
+@media (max-width: 490px) {
     .navbar a {
         display: none;
-        font-size: 8px;
-        padding: 6px 7px;
     }
 
     .hero-content .call-btn {
         display: inline;
     }
 
-    /* .content nav i {
-        font-size: 8px;
-    } */
-
-    /* Location And Search  */
-    /* .location-search {
-        gap: 8px;
-    } */
-
-    /* Location Section */
-    /* .location-container {
-        gap: 8px;
-        font-size: 10px;
-    } */
-
-    /* Search Box */
-    /* .search-box {
-        padding: 3px 6px;
-        border-radius: 4px;
-    } */
-
-    /* .search-box select {
-        font-size: 9px;
-        border: none;
-        outline: none;
-        width: 65px;
-    } */
-
     /* Logo */
-    /* nav .logo {
-        margin-top: 40px;
-    }
 
     .logo img {
-        width: 70px;
-    } */
+        width: 80px;
+    }
 }
 
 @media (max-width: 440px) {
     nav {
-        height: 40px;
+        height: 60px;
         padding: 0 20px;
     }
 
@@ -639,27 +459,11 @@ nav .logo {
         font-size: 8px;
     } */
 
-    /* Search Box */
-    /* .search-box {
-        padding: 3px 5px;
-        border-radius: 4px;
-    } */
-
-    /* .search-box select {
-        font-size: 8px;
-        border: none;
-        outline: none;
-        width: 65px;
-    } */
-
     /* Logo */
-    /* nav .logo {
-        margin-top: 40px;
-    }
 
     .logo img {
-        width: 70px;
-    } */
+        width: 60px;
+    }
 }
 
 @media(max-width:420px) {
@@ -1114,15 +918,17 @@ nav .logo {
 }
 
 .main-text {
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 10vw;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1;
     color: white;
-    -webkit-text-stroke: 3px black;
+    -webkit-text-stroke: 2px black;
 }
 
 .sub-text {
+    font-family: 'Bebas Neue', sans-serif;
     font-size: 3.5vw;
     font-weight: bold;
     text-transform: uppercase;
@@ -1487,14 +1293,6 @@ form {
     font-size: 11px;
     color: white;
     font-weight: 300;
-}
-
-.download_app_icon {
-    height: 40px;
-}
-
-.download_app_icon:hover {
-    transform: scale(1.1);
 }
 
 /* Footer Adjustments */
