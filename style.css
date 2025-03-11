@@ -961,20 +961,29 @@ nav .logo {
 }
 
 @media (max-width:330px) {
+    .banner2-ph-top h2 {
+        font-size: 18px;
+    }
+
     .banner2-ph-left img {
-        height: 210px;
+        height: 170px;
         /* width: 255px; */
     }
 
     .banner2-ph-right .charminar-img {
-        height: 200px;
-        right: 10px;
+        height: 170px;
+        right: 16px;
         bottom: 30px;
     }
 
     .banner2-ph-right .nizam-img {
-        height: 180px;
-        right: 18px;
+        height: 160px;
+        right: 25px;
+    }
+
+    .banner2-ph-bottom p {
+        margin: 15px;
+        font-size: 10px;
     }
 }
 
