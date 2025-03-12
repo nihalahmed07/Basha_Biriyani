@@ -22,64 +22,60 @@
 </head>
 
 <body>
+    <!-- Navbar  -->
+    <nav>
+        <!-- Location -->
+        <div class="location-container">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Ambur</span>
+        </div>
+
+        <!-- Call & Whatsapp in navBar-->
+        <ul class="navbar">
+            <li><a href="tel:+917010933659"><i class="fa-solid fa-phone"></i> Call</a></li>
+            <li><a href="https://wa.me/+917010933659?text=Hello%20I%20have%20an%20inquiry" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a></li>
+        </ul>
+
+        <!-- Logo -->
+        <a href="/" class="logo">
+            <img src="./images/Basha Transparent Logo R.png" alt="Logo">
+        </a>
+    </nav>
     <section class="banner">
-        <img src="./Images/Banner.png" alt="Banner Image">
+        <img src="./Images/Banner.png" alt="Banner Image"> <!--For Desktop/Laptop and Tab-->
+        <video src="./Images/Banner Video.mp4" alt="Banner Video" autoplay loop muted
+            class="banner-vid"></video><!--For Desktop/Laptop and Tab-->
         <div class="content" id="home">
-            <nav>
-                <!-- Location & Search -->
-                <div class="location-search">
-                    <div class="location-container">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Ambur</span>
-                    </div>
-                </div>
-
-                <!-- Call & Whatsapp in navBar-->
-                <ul class="navbar">
-                    <li><a href="tel:+917010933659"><i class="fa-solid fa-phone"></i> Call</a></li>
-                    <li><a href="https://wa.me/+917010933659?text=Hello%20I%20have%20an%20inquiry" target="_blank">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </a></li>
-                </ul>
-
-                <!-- Logo -->
-                <a href="/" class="logo">
-                    <img src="./images/Basha Transparent Logo R.png" alt="Logo">
-                </a>
-            </nav>
-            <div class="text-white hero">
-                <div
-                    class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center hero-container">
-                    <div class="md:w-1/2 text-center md:text-left hero-content">
-                        <p class="text-yellow-500 text-[1.8rem] tracking-[1px] mb-[25px] hero-subtitle"
-                            style="font-family: 'Shadows Into Light', cursive;">
-                            Authentic....... Aromatic....... Addictive
-                        </p>
-                        <h1 class="text-5xl font-bold mb-4 hero-title">
-                            KING OF THE FOODS!
-                        </h1>
-                        <p class="text-gray-300 mb-8 hero-text">
-                            Spiced to Perfection, Served with Tradition!
-                        </p>
-                        <button
-                            class="bg-yellow-500 text-red-900 font-bold py-3 px-6 rounded-full shadow-lg hover:bg-yellow-600 transition banner-btn"
-                            onclick="location.href='#menu'">
-                            Order Now
-                        </button>
-                        <!-- Call & Whatsapp in banner-->
-                        <a href="tel:+917010933659"><i class="fa-solid fa-phone bg-yellow-500
+            <div
+                class="container relative text-white mx-auto px-4 flex flex-col items-center justify-center text-center hero-container">
+                <p class="text-yellow-500 text-[1.8rem] tracking-[1px] mb-3 hero-subtitle"
+                    style="font-family: 'Shadows Into Light', cursive;">
+                    Authentic....... Aromatic....... Addictive
+                </p>
+                <h1 class="text-5xl font-bold mb-4 hero-title">
+                    KING OF THE FOODS!
+                </h1>
+                <p class="text-gray-300 mb-8 hero-text">
+                    Spiced to Perfection, Served with Tradition!
+                </p>
+                <div>
+                    <button
+                        class="bg-yellow-500 text-red-900 font-bold py-3 px-6 rounded-full shadow-lg hover:bg-yellow-600 transition banner-btn"
+                        onclick="location.href='#menu'">
+                        Order Now
+                    </button>
+                    <!-- Call & Whatsapp in banner -->
+                    <a href="tel:+917010933659"><i class="fa-solid fa-phone bg-yellow-500
+                                            text-red-900 font-bold py-3 px-3 rounded-full shadow-lg hover:bg-yellow-600
+                                            transition call-btn banner-btn"></i></a>
+                    <a href="https://wa.me/+917010933659?text=Hello%20I%20have%20an%20inquiry" target="_blank"><i class="fab fa-whatsapp bg-yellow-500
                                         text-red-900 font-bold py-3 px-3 rounded-full shadow-lg hover:bg-yellow-600
                                         transition call-btn banner-btn"></i></a>
-                        <a href="https://wa.me/+917010933659?text=Hello%20I%20have%20an%20inquiry" target="_blank"><i
-                                class="fab fa-whatsapp bg-yellow-500
-                                    text-red-900 font-bold py-3 px-3 rounded-full shadow-lg hover:bg-yellow-600
-                                    transition call-btn banner-btn"></i></a>
-                    </div>
-                    <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
-
-                    </div>
                 </div>
             </div>
+
         </div>
     </section>
 
