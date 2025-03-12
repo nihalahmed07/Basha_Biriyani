@@ -15,7 +15,7 @@
 
         .container {
             max-width: 700px;
-            margin: 50px 20px;
+            margin: 50px auto;
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 10px;
@@ -95,48 +95,29 @@
                 <i class="fas fa-university"></i>
                 <span>Pay via Net Banking</span>
             </div>
-            <div class="payment-option" onclick="payNow('COD', this)">
-                <i class="fas fa-truck"></i>
-                <span>Cash on Delivery (COD)</span>
-            </div>
         </div>
 
         <button class="pay-now-btn" onclick="placeOrder()">Place Order</button>
     </div>
 
     <script>
-        // Retrieve total amount from localStorage
         let total = localStorage.getItem('total') || 0;
         document.getElementById('total-amount').innerText = total;
 
         function payNow(method, element) {
-            // Store selected payment method
             localStorage.setItem('paymentMethod', method);
             alert(`✅ Payment Method Selected: ${method}`);
 
-            // Remove 'selected' class from all payment options
-            const options = document.querySelectorAll('.payment-option');
-            options.forEach(option => {
-                option.classList.remove('selected');
-            });
-
-            // Add 'selected' class to the clicked option
+            document.querySelectorAll('.payment-option').forEach(option => option.classList.remove('selected'));
             element.classList.add('selected');
         }
 
         function placeOrder() {
-            const paymentMethod = localStorage.getItem('paymentMethod');
-            if (!paymentMethod) {
-                alert('Please select a payment method before placing the order.');
-                return;
-            }
-
-            alert('🎉 Payment Successful! Your Order is Placed.');
-            localStorage.removeItem('cart');
-            localStorage.removeItem('total');
-            window.location.href = 'order-confirmation.html'; // Redirect to order confirmation page
+            alert('✅ Payment Successful! Redirecting...');
+            window.location.href = 'thankyou.html';
         }
     </script>
+
 </body>
 
 </html>
