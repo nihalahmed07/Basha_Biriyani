@@ -19,34 +19,6 @@
     font-style: normal;
 }
 
-.banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    z-index: 10;
-}
-
-.banner>img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
-}
-
-.content {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(1, 0, 5, 0.4), rgba(4, 1, 17, 0.6));
-}
 
 /* Navbar Styling */
 nav {
@@ -60,13 +32,6 @@ nav {
     justify-content: space-between;
     padding: 0 60px;
     z-index: 100;
-}
-
-/* Location And Search  */
-.location-search {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
 }
 
 /* Location Section */
@@ -122,54 +87,71 @@ nav {
 /* Logo */
 nav .logo {
     align-items: center;
-    /* margin-top: 60px; */
     z-index: 150;
 }
 
 .logo img {
     width: 100px;
-    /* margin-top: 10px; */
     object-fit: cover;
 }
 
-/* Call & Whatsapp in Banner */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
 
-.hero-content .call-btn {
+.banner>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(1, 0, 5, 0.4), rgba(4, 1, 17, 0.6));
+    display: flex;
+    align-items: center;
+}
+
+.banner>video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+.banner-vid {
     display: none;
 }
 
-/* Navbar Adjustments */
 
-@media(min-width:1250px) {
-    .banner {
-        height: 100%;
-    }
-
-    .content {
-        height: 100vh;
-    }
-
-    .hero-container {
-        padding-top: 340px;
-        /* padding-bottom: 15rem; */
-    }
-
+/* Call & Whatsapp in Banner */
+.hero-container .call-btn {
+    display: none;
 }
+
+/* Navbar and Banner Adjustments */
 
 @media(max-width:1250px) {
     .banner {
-        height: 100%;
-    }
-
-    .content {
         height: 100vh;
     }
-
-    .hero-container {
-        padding-top: 320px;
-        /* padding-bottom: 12rem; */
-    }
-
 }
 
 @media (max-width: 1060px) {
@@ -179,12 +161,6 @@ nav .logo {
         padding: 9px 16px;
     }
 
-    /* Location And Search  */
-    .location-search {
-        gap: 12px;
-    }
-
-    /* Location Section */
     .location-container {
         gap: 10px;
         font-size: 15px;
@@ -193,31 +169,8 @@ nav .logo {
     .location-container i {
         font-size: 18px;
     }
-
-    /* Logo */
-
-    .logo img {
-        width: 100px;
-    }
 }
 
-
-
-@media(max-width:1023px) {
-    .banner {
-        height: 100%;
-    }
-
-    .content {
-        height: 100vh;
-    }
-
-    .hero-container {
-        padding-top: 260px;
-        /* padding-bottom: 8rem; */
-    }
-
-}
 
 @media (max-width: 970px) {
     nav {
@@ -230,20 +183,11 @@ nav .logo {
         padding: 7px 13px;
     }
 
-    /* Location And Search  */
-    .location-search {
-        gap: 10px;
-    }
-
     /* Location Section */
     .location-container {
         gap: 8px;
         font-size: 14px;
     }
-
-    /* .location-container i {
-        font-size: 18px;
-    } */
 
     /* Logo */
 
@@ -263,26 +207,10 @@ nav .logo {
         padding: 7px 10px;
     }
 
-    /* Location And Search  */
-    .location-search {
-        gap: 10px;
-    }
-
     /* Location Section */
     .location-container {
         gap: 8px;
         font-size: 13px;
-    }
-
-    /* .location-container i {
-            font-size: 18px;
-        } */
-
-    /* Logo */
-
-
-    .logo img {
-        width: 80px;
     }
 }
 
@@ -297,77 +225,32 @@ nav .logo {
         padding: 6px 7px;
     }
 
-    /* Location And Search  */
-    .location-search {
-        gap: 10px;
-    }
-
     /* Location Section */
     .location-container {
         gap: 8px;
         font-size: 12px;
     }
 
-    /* .location-container i {
-            font-size: 18px;
-        } */
-
-
-
-    /* Logo */
-
-    .logo img {
-        width: 80px;
-    }
-
     .banner {
-        height: 100%;
-    }
-
-    .content {
-        height: 550px;
-    }
-
-    .hero-container {
-        padding-top: 210px;
-        /* padding-bottom: 7rem; */
+        height: 650px;
     }
 }
 
-@media(max-width:765px) {
+@media(max-width:768px) {
     .banner {
-        height: 100%;
-    }
-
-    .content {
         height: 450px;
     }
 
     .hero-container {
-        padding-top: 180px
+        padding-top: 30px
     }
 
-}
-
-@media (max-width: 630px) {
-
-    .content {
-        height: 450px;
+    .hero-subtitle {
+        font-size: 26px !important
     }
 
-    .hero-container {
-        padding-top: 150px
-    }
-
-
-
-    /* Logo */
-    /* nav .logo {
-        margin-top: 50px;
-    } */
-
-    .logo img {
-        width: 80px;
+    .hero-title {
+        font-size: 48px !important
     }
 }
 
@@ -382,27 +265,26 @@ nav .logo {
         padding: 6px 7px;
     }
 
-    /* Location And Search  */
-    .location-search {
-        gap: 7px;
-    }
-
     /* Location Section */
     .location-container {
         gap: 8px;
         font-size: 11px;
     }
 
-    .content {
-        height: 450px;
-    }
-
     .hero-container {
-        padding-top: 160px
+        padding-top: 30px
     }
 
-    .logo img {
-        width: 80px;
+    .hero-subtitle {
+        font-size: 24px !important
+    }
+
+    .hero-title {
+        font-size: 40px !important
+    }
+
+    .hero-container button {
+        font-size: 14px !important
     }
 }
 
@@ -411,14 +293,31 @@ nav .logo {
         display: none;
     }
 
-    .hero-content .call-btn {
+    .hero-container>div .call-btn {
         display: inline;
     }
 
     /* Logo */
 
     .logo img {
-        width: 80px;
+        width: 70px;
+    }
+
+    .hero-container {
+        padding-top: 30px
+    }
+
+    .hero-subtitle {
+        font-size: 20px !important
+    }
+
+    .hero-title {
+        font-size: 36px !important
+    }
+
+    .hero-container>div button,
+    .hero-container>div a {
+        font-size: 12px !important
     }
 }
 
@@ -437,35 +336,27 @@ nav .logo {
     /* Logo */
 
     .logo img {
-        width: 70px;
+        width: 80px;
     }
 
     .banner {
-        height: 100%;
+        height: 100vh;
     }
 
-    .content {
-        height: 540px;
+    .banner>img {
+        display: none;
     }
 
-    .hero-container {
+    .banner-vid {
+        display: flex;
+    }
+
+    /* .hero-container {
         padding-top: 220px;
-        /* padding-bottom: 5rem; */
-    }
+    } */
 }
 
 @media(max-width:420px) {
-    .banner {
-        height: 100%;
-    }
-
-    .content {
-        height: 600px;
-    }
-
-    .logo img {
-        width: 80px;
-    }
 
     .hero-container {
         padding-top: 250px;
