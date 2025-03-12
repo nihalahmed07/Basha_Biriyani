@@ -6,6 +6,7 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 .body {
@@ -340,7 +341,7 @@ nav .logo {
     }
 
     .banner {
-        height: 90vh;
+        height: 70vh;
     }
 
     .banner>img {
