@@ -18,6 +18,12 @@
             margin: 20px auto;
         }
 
+        @media(max-width:1240px) {
+            .container {
+                margin: 20px 40px;
+            }
+        }
+
         .cart-header {
             text-align: center;
             font-size: 24px;
@@ -90,7 +96,7 @@
 
         .empty-cart-message {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 150px;
         }
 
         .back-home-btn {
@@ -111,13 +117,13 @@
         <div id="cart-items" class="cart-items">
             <!-- Cart items will appear here -->
         </div>
-        <div class="cart-total">
-            <h3>Total: ₹<span id="cart-total">0</span></h3>
-            <button class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
-        </div>
         <div id="empty-cart-message" class="empty-cart-message" style="display: none;">
             <p>No items in your cart.</p>
             <button class="back-home-btn" onclick="goToHome()">Back to Home</button>
+        </div>
+        <div class="cart-total">
+            <h3>Total: ₹<span id="cart-total">0</span></h3>
+            <button class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
         </div>
     </div>
 
@@ -179,7 +185,7 @@
         }
 
         function proceedToCheckout() {
-            window.location.href = 'payment-gateway.html'; // Redirect to payment gateway page
+            window.location.href = 'checkout page.html'; // Redirect to payment gateway page
         }
 
         function goToHome() {
