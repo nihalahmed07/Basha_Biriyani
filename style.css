@@ -358,9 +358,9 @@ nav .logo {
 
 @media(max-width:420px) {
 
-    .hero-container {
+    /* .hero-container {
         padding-top: 200px;
-    }
+    } */
 
     .hero-title {
         font-size: 36px !important;
@@ -373,22 +373,6 @@ nav .logo {
 }
 
 @media(max-width:375px) {
-    .banner {
-        height: 100%;
-    }
-
-    .content {
-        height: 600px;
-    }
-
-    .logo img {
-        width: 80px;
-    }
-
-    .hero-container {
-        padding-top: 250px;
-    }
-
     .hero-title {
         font-size: 34px !important;
     }
