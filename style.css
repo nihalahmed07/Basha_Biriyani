@@ -467,6 +467,44 @@ nav .logo {
     display: none;
 }
 
+/* Steam From Handi */
+
+@keyframes steam {
+    0% {
+        opacity: 0.2;
+        transform: translateY(0) scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-150px) scale(1.5);
+    }
+}
+
+.steam {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    width: 100px;
+    height: 200px;
+    background: url('./Images/steam.jpg') repeat;
+    opacity: 0.2;
+    animation: steam 3s infinite;
+    transform-origin: bottom center;
+}
+
+.steam:nth-child(2) {
+    left: 45%;
+    animation-duration: 3.5s;
+    animation-delay: 0.5s;
+}
+
+.steam:nth-child(3) {
+    left: 55%;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
 @media(max-width:1140px) {
 
     .banner2 {
