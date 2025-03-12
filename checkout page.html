@@ -126,9 +126,9 @@
 
         document.getElementById('checkout-form').addEventListener('submit', function (e) {
             e.preventDefault();
-            alert('✅ Order Placed Successfully!');
+            alert('redirecting to Payment Gateway');
             localStorage.removeItem('cart');
-            window.location.href = 'index.html';
+            window.location.href = 'payment-gateway.html';
         });
 
         renderOrderSummary();
