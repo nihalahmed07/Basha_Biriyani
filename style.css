@@ -505,6 +505,78 @@ nav .logo {
     animation-delay: 1s;
 }
 
+/* Sticky Order Buttons */
+.order-buttons {
+    position: fixed;
+    z-index: 9999;
+    top: 50%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transform: translateY(-50%);
+}
+
+/* Individual Order Button */
+.order-button {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    width: 50px;
+    /* Initially small */
+    overflow: hidden;
+    border-radius: 25px 0 0 25px;
+    transition: width 0.4s ease-in-out;
+}
+
+/* Expand on Hover */
+.order-button:hover {
+    width: 200px;
+}
+
+/* Icon Container */
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* Swiggy Colors */
+.swiggy {
+    background: #f78820;
+}
+
+/* Zomato Colors */
+.zomato {
+    background: #cc202e;
+}
+
+/* Order Icon */
+.icon-container img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Order Text */
+.order-text {
+    color: #fff;
+    font-size: 14px;
+    padding: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show text on hover */
+.order-button:hover .order-text {
+    opacity: 1;
+}
+
 @media(max-width:1140px) {
 
     .banner2 {
