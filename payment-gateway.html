@@ -74,6 +74,13 @@
             text-align: center;
             width: 100%;
             margin-top: 20px;
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .pay-now-btn.enabled {
+            opacity: 1;
+            cursor: pointer;
         }
 
         @media(max-width:768px) {
@@ -100,7 +107,6 @@
             .payment-option span {
                 font-size: 13px;
             }
-
         }
     </style>
 </head>
@@ -125,12 +131,13 @@
             </div>
         </div>
 
-        <button class="pay-now-btn" onclick="placeOrder()">Place Order</button>
+        <button id="place-order-btn" class="pay-now-btn" disabled onclick="placeOrder()">Place Order</button>
     </div>
 
     <script>
         let total = localStorage.getItem('total') || 0;
         document.getElementById('total-amount').innerText = total;
+        let paymentSelected = false;
 
         function payNow(method, element) {
             localStorage.setItem('paymentMethod', method);
@@ -138,9 +145,19 @@
 
             document.querySelectorAll('.payment-option').forEach(option => option.classList.remove('selected'));
             element.classList.add('selected');
+
+            // Enable the button when a payment method is selected
+            paymentSelected = true;
+            const btn = document.getElementById('place-order-btn');
+            btn.disabled = false;
+            btn.classList.add('enabled');
         }
 
         function placeOrder() {
+            if (!paymentSelected) {
+                alert('Please select a payment method before proceeding.');
+                return;
+            }
             alert('Payment Successful! Redirecting...');
             window.location.href = 'thankyou.html';
         }
