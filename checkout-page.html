@@ -15,7 +15,7 @@
         }
 
         .container {
-            max-width: 500px;
+            max-width: 550px;
             margin: auto;
             background: white;
             padding: 20px;
@@ -40,7 +40,7 @@
         }
 
         .form-group input {
-            width: 100%;
+            width: 96%;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -76,13 +76,33 @@
             width: 100%;
             font-size: 18px;
         }
+
+        @media(max-width:425px) {
+
+            .form-group input {
+                width: 93%;
+            }
+
+            .order-summary h3 {
+                font-size: 15px;
+            }
+
+            .order-item {
+                font-size: 14px;
+            }
+
+            .place-order-btn {
+                padding: 15px;
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <div class="container">
-        <div class="checkout-header">🛍️ Checkout</div>
+        <div class="checkout-header"><i class="fa fa-shopping-basket"></i> Checkout</div>
 
         <form id="checkout-form">
             <div class="form-group">
