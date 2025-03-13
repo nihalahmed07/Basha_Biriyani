@@ -507,6 +507,7 @@ nav .logo {
 
 /* Sticky Order Buttons */
 .order-buttons {
+    display: none;
     position: fixed;
     z-index: 9999;
     top: 50%;
