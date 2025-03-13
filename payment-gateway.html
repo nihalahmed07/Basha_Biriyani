@@ -10,16 +10,17 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 20px;
         }
 
         .container {
-            max-width: 700px;
-            margin: 50px auto;
+            max-width: 550px;
+            margin: auto;
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 10px;
             background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         .container h2 {
@@ -74,12 +75,39 @@
             width: 100%;
             margin-top: 20px;
         }
+
+        @media(max-width:768px) {
+            .container {
+                max-width: 450px;
+            }
+        }
+
+        @media(max-width:530px) {
+            .container {
+                max-width: 350px;
+            }
+        }
+
+        @media(max-width:340px) {
+            .container h2 {
+                font-size: 20px;
+            }
+
+            .container p {
+                font-size: 16px;
+            }
+
+            .payment-option span {
+                font-size: 13px;
+            }
+
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h2>💳 Payment Gateway</h2>
+        <h2><i class="fa fa-credit-card"></i> Payment Gateway</h2>
         <p class="total-amount">Total Amount: ₹<span id="total-amount">0</span></p>
 
         <div class="payment-options">
@@ -106,14 +134,14 @@
 
         function payNow(method, element) {
             localStorage.setItem('paymentMethod', method);
-            alert(`✅ Payment Method Selected: ${method}`);
+            alert(`Payment Method Selected: ${method}`);
 
             document.querySelectorAll('.payment-option').forEach(option => option.classList.remove('selected'));
             element.classList.add('selected');
         }
 
         function placeOrder() {
-            alert('✅ Payment Successful! Redirecting...');
+            alert('Payment Successful! Redirecting...');
             window.location.href = 'thankyou.html';
         }
     </script>
