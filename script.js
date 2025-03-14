@@ -16,26 +16,6 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     });
 });
 
-// Sends to WhatsApp
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-   
-    // Capture form data
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var subject = document.getElementById('subject').value;
-    var message = document.getElementById('message').value;
-   
-    // Format WhatsApp message
-    var whatsappMessage = `📩 *New Contact Form Submission*%0A%0A👤 *Name:* ${name}%0A📧 *Email:* ${email}%0A📄 *Subject:* ${subject}%0A💬 *Message:* ${message}`;
-   
-    // WhatsApp API URL
-    var whatsappURL = `https://wa.me/917010933659?text=${whatsappMessage}`;
-   
-    // Redirect to WhatsApp
-    window.open(whatsappURL, '_blank');
-   });
-
 // Lightbox Functionality
 function openLightbox(img) {
     document.getElementById('lightbox-img').src = img.src;
@@ -66,71 +46,3 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
-
-// Cart Functionality
-let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-// Function to add item to cart
-
-
-function addToCart(item) {
-    const existingItemIndex = cart.findIndex(cartItem => cartItem.name === item.name);
-    
-    if (existingItemIndex > -1) {
-        cart[existingItemIndex].quantity += 1; // Increase quantity if item exists
-    } else {
-        item.quantity = 1; // Set initial quantity to 1
-        cart.push(item); // Add new item to cart
-    }
-    
-    saveCart(); // Save updated cart to local storage
-
-    // Show toast notification
-    showToast(`${item.name} has been added to your cart!`);
-}
-
-function showToast(message) {
-    const toast = document.getElementById('toast');
-    toast.innerText = message;
-    toast.style.display = 'block';
-    toast.style.opacity = '1';
-
-    // Hide the toast after 3 seconds
-    setTimeout(() => {
-        toast.style.opacity = '0';
-        setTimeout(() => {
-            toast.style.display = 'none';
-        }, 500); // Wait for fade out to finish
-    }, 3000);
-}
-// Function to save cart to local storage
-function saveCart() {
-    localStorage.setItem('cart', JSON.stringify(cart));
-    calculateTotal(); // Update total whenever the cart is saved
-}
-
-// Function to calculate total
-function calculateTotal() {
-    let total = cart.reduce((accumulator, item) => accumulator + (item.price * item.quantity), 0);
-    document.getElementById('cart-total').innerText = total;
-}
-
-// Add event listeners to order buttons
-document.querySelectorAll('.order-btn').forEach((button) => {
-    button.addEventListener('click', () => {
-        const card = button.closest('.card');
-        const itemName = card.querySelector('h3').innerText;
-        const itemPrice = parseInt(card.querySelector('.text-orange-500').innerText.replace('PRICE: ₹', '').trim());
-        const itemImage = card.querySelector('img').src; // Assuming there's an image in the card
-
-        addToCart({ name: itemName, price: itemPrice, image: itemImage });
-    });
-});
-
-// Function to go to cart
-// function goToCart() {
-//     window.location.href = 'cart.html'; // Ensure this matches the filename of your cart page
-// }
-
-// Initial calculation of total on page load
-// calculateTotal();
