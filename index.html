@@ -67,7 +67,7 @@
             <div class="banner-button py-6">
                 <button
                     class="bg-yellow-500 text-red-900 font-bold py-3 px-6 rounded-full shadow-lg hover:bg-yellow-600 transition banner-btn"
-                    onclick="location.href='#menu'">
+                    onclick="openPopup()">
                     Order Now
                 </button>
                 <!-- Call & Whatsapp in banner -->
@@ -81,6 +81,25 @@
 
         </div>
     </section>
+
+    <!-- Full-Screen Popup -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup()">✖</button>
+            <h2 class="popup-title">Order From:</h2>
+
+            <!-- Swiggy & Zomato Box Container -->
+            <div class="full-screen-container">
+                <a href="https://www.swiggy.com" target="_blank" class="full-screen-box swiggy">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png" alt="Swiggy Logo">
+                </a>
+
+                <a href="https://www.zomato.com" target="_blank" class="full-screen-box zomato">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Zomato_logo.png" alt="Zomato Logo">
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- Sticky Order Buttons -->
     <section class="order-buttons"> <!--Display none-->
@@ -316,255 +335,6 @@
                         </p>
                     </div>
                 </div>
-                <!-- Card 4 -->
-                <!-- <div class="bg-white rounded-lg shadow-lg p-4 card" data-category="Burger">
-                    <div class="relative">
-                        <img alt="A plate of Burger King Whopper with fries"
-                            class="w-full h-48 object-cover rounded-t-lg" height="300"
-                            src="https://storage.googleapis.com/a1aa/image/hy4TXxmehFZWAt8SdAv8JU7rwCOh3qbCaUaHyZSJYqg.jpg"
-                            width="300" />
-                        <button
-                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 text-white text-xs font-bold px-4 py-2 rounded order-btn">
-                            Add to Cart
-                        </button>
-                    </div>
-                    <div class="p-4">
-                        <p class="text-gray-500">
-                            Noodles
-                            <span class="text-yellow-500">
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                            </span>
-                        </p>
-                        <h3 class="text-lg font-bold text-gray-800">
-                            Burger King Whopper
-                        </h3>
-                        <p class="text-orange-500 font-bold">
-                            PRICE: ₹250
-                            <span class="line-through text-gray-500">
-                                ₹300
-                            </span>
-                        </p>
-                    </div>
-                </div> -->
-                <!-- Card 5 -->
-                <!-- <div class="bg-white rounded-lg shadow-lg p-4 card" data-category="Pizza">
-                    <div class="relative">
-                        <img alt="A plate of White Castle Pizzas with toppings"
-                            class="w-full h-48 object-cover rounded-t-lg" height="300"
-                            src="https://storage.googleapis.com/a1aa/image/7CDLc66NCnM6zEYbtOUNJgnC32DCga8nO7_POSNXNCc.jpg"
-                            width="300" />
-                        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
-                            -15%
-                        </span>
-                        <button
-                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 text-white text-xs font-bold px-4 py-2 rounded order-btn">
-                            Add to Cart
-                        </button>
-                    </div>
-                    <div class="p-4">
-                        <p class="text-gray-500">
-                            Pizzas
-                            <span class="text-yellow-500">
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                            </span>
-                        </p>
-                        <h3 class="text-lg font-bold text-gray-800">
-                            White Castle Pizzas
-                        </h3>
-                        <p class="text-orange-500 font-bold">
-                            PRICE: ₹400
-                            <span class="line-through text-gray-500">
-                                ₹470
-                            </span>
-                        </p>
-                    </div>
-                </div> -->
-                <!-- Card 6 -->
-                <!-- <div class="bg-white rounded-lg shadow-lg p-4 card" data-category="Burrito">
-                    <div class="relative">
-                        <img alt="A plate of Bell Burrito Supreme with various side dishes"
-                            class="w-full h-48 object-cover rounded-t-lg" height="300"
-                            src="https://storage.googleapis.com/a1aa/image/MsQW3dTHXd7vr0WhDBwcEeAub-ka2i0asuEGFYgxcX4.jpg"
-                            width="300" />
-                        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
-                            -20%
-                        </span>
-                        <button
-                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 text-white text-xs font-bold px-4 py-2 rounded order-btn">
-                            Add to Cart
-                        </button>
-                    </div>
-                    <div class="p-4">
-                        <p class="text-gray-500">
-                            Burrito
-                            <span class="text-yellow-500">
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                            </span>
-                        </p>
-                        <h3 class="text-lg font-bold text-gray-800">
-                            Bell Burrito Supreme
-                        </h3>
-                        <p class="text-orange-500 font-bold">
-                            PRICE: ₹800
-                            <span class="line-through text-gray-500">
-                                ₹1000
-                            </span>
-                        </p>
-                    </div>
-                </div> -->
-                <!-- Card 7 -->
-                <!-- <div class="bg-white rounded-lg shadow-lg p-4 card" data-category="Nuggets">
-                    <div class="relative">
-                        <img alt="A plate of Kung Pao Chicken BBQ with vegetables"
-                            class="w-full h-48 object-cover rounded-t-lg" height="300"
-                            src="https://storage.googleapis.com/a1aa/image/QjV7jJ4AKYV6BuzdG_Iunq0-OVzV5qHT4HNh0p5MCYs.jpg"
-                            width="300" />
-                        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
-                            -15%
-                        </span>
-                        <button
-                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 text-white text-xs font-bold px-4 py-2 rounded order-btn">
-                            Add to Cart
-                        </button>
-                    </div>
-                    <div class="p-4">
-                        <p class="text-gray-500">
-                            Nuggets
-                            <span class="text-yellow-500">
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                            </span>
-                        </p>
-                        <h3 class="text-lg font-bold text-gray-800">
-                            Kung Pao Chicken BBQ
-                        </h3>
-                        <p class="text-orange-500 font-bold">
-                            PRICE: ₹400
-                            <span class="line-through text-gray-500">
-                                ₹470
-                            </span>
-                        </p>
-                    </div>
-                </div> -->
-                <!-- Card 8 -->
-                <!-- <div class="bg-white rounded-lg shadow-lg p-4 card" data-category="Chicken">
-                    <div class="relative">
-                        <img alt="A plate of Wendy's Chicken with various side dishes"
-                            class="w-full h-48 object-cover rounded-t-lg" height="300"
-                            src="https://storage.googleapis.com/a1aa/image/YYGlYB-n1u8biIIqBX_flB-CzQXmn4qUIHQ8C-2W2eI.jpg"
-                            width="300" />
-                        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
-                            -15%
-                        </span>
-                        <button
-                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 text-white text-xs font-bold px-4 py-2 rounded order-btn">
-                            Add to Cart
-                        </button>
-                    </div>
-                    <div class="p-4">
-                        <p class="text-gray-500">
-                            Chicken
-                            <span class="text-yellow-500">
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                            </span>
-                        </p>
-                        <h3 class="text-lg font-bold text-gray-800">
-                            Wendy's Chicken
-                        </h3>
-                        <p class="text-orange-500 font-bold">
-                            PRICE: ₹400
-                            <span class="line-through text-gray-500">
-                                ₹470
-                            </span>
-                        </p>
-                    </div>
-                </div> -->
-                <!-- Card 9 -->
-                <!-- <div class="bg-white rounded-lg shadow-lg p-4 card" data-category="Pizza">
-                    <div class="relative">
-                        <img alt="A plate of Margherita Pizza with fresh basil and tomatoes"
-                            class="w-full h-48 object-cover rounded-t-lg" height="300"
-                            src="https://storage.googleapis.com/a1aa/image/Ar2BfpixHpkvUOqi9WZlz_UoWehTJ7IoTF2mwznAaBk.jpg"
-                            width="300" />
-                        <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
-                            -10%
-                        </span>
-                        <button
-                            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-red-500 text-white text-xs font-bold px-4 py-2 rounded order-btn">
-                            Add to Cart
-                        </button>
-                    </div>
-                    <div class="p-4">
-                        <p class="text-gray-500">
-                            Pizza
-                            <span class="text-yellow-500">
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                            </span>
-                        </p>
-                        <h3 class="text-lg font-bold text-gray-800">
-                            Wendy's Chicken
-                        </h3>
-                        <p class="text-orange-500 font-bold">
-                            PRICE: ₹400
-                            <span class="line-through text-gray-500">
-                                ₹470
-                            </span>
-                        </p>
-                    </div>
-                </div> -->
             </div>
         </div>
 
