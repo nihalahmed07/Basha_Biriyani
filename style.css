@@ -142,14 +142,140 @@ nav .logo {
     display: none;
 }
 
-.banner-btn {
-    /* position: relative;
-    bottom: 10; */
-}
-
 /* Call & Whatsapp in Banner */
 .banner-button .call-btn {
     display: none;
+}
+
+/* Order Now Button */
+.order-btn {
+    background: #fc8019;
+    color: white;
+    font-size: 1.5rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: background 0.3s ease;
+}
+
+.order-btn:hover {
+    background: #e26d00;
+}
+
+/* Full-Screen Popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    /* Slight opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 100;
+}
+
+/* Popup Content */
+.popup-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Popup Title */
+.popup-title {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Box Container */
+.full-screen-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Box Style */
+.full-screen-box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+/* Swiggy Box */
+.swiggy {
+    background: #fc8019;
+}
+
+/* Zomato Box */
+.zomato {
+    background: #e23744;
+}
+
+/* Hover Effect */
+.full-screen-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Logo Styling */
+.full-screen-box img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Show Popup */
+.popup.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .full-screen-container {
+        flex-direction: column;
+    }
+
+    .full-screen-box {
+        width: 150px;
+        height: 150px;
+    }
+
+    .full-screen-box img {
+        width: 100px;
+    }
 }
 
 /* Navbar and Banner Adjustments */
