@@ -124,6 +124,7 @@ nav .logo {
     height: 100%;
     background: linear-gradient(rgba(1, 0, 5, 0.2), rgba(4, 1, 17, 0.6));
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -141,9 +142,13 @@ nav .logo {
     display: none;
 }
 
+.banner-btn {
+    /* position: relative;
+    bottom: 10; */
+}
 
 /* Call & Whatsapp in Banner */
-.hero-container .call-btn {
+.banner-button .call-btn {
     display: none;
 }
 
@@ -294,7 +299,7 @@ nav .logo {
         display: none;
     }
 
-    .hero-container>div .call-btn {
+    .banner-button .call-btn {
         display: inline;
     }
 
