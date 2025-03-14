@@ -46,3 +46,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+
+//Pop for order now button
+
+// Function to Open Popup
+function openPopup() {
+    document.getElementById("popup").classList.add("show");
+}
+
+// Function to Close Popup
+function closePopup() {
+    document.getElementById("popup").classList.remove("show");
+}
