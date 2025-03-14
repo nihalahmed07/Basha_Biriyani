@@ -142,6 +142,17 @@ nav .logo {
     display: none;
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap');
+
+.hero-title {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.hero-text {
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Call & Whatsapp in Banner */
 .banner-button .call-btn {
     display: none;
@@ -303,6 +314,19 @@ nav .logo {
     }
 }
 
+@media(max-width: 1025px) {
+    .hero-title .ht-m {
+        font-size: 80px !important;
+    }
+
+    .hero-title .ht-m1 {
+        font-size: 55px !important;
+    }
+
+    .hero-title .ht-m2 {
+        font-size: 65px !important;
+    }
+}
 
 @media (max-width: 970px) {
     nav {
@@ -381,8 +405,20 @@ nav .logo {
         font-size: 26px !important
     }
 
-    .hero-title {
-        font-size: 48px !important
+    .hero-title .ht-m {
+        font-size: 60px !important;
+    }
+
+    .hero-title .ht-m1 {
+        font-size: 40px !important;
+    }
+
+    .hero-title .ht-m2 {
+        font-size: 50px !important;
+    }
+
+    .banner-button {
+        padding: 5px;
     }
 }
 
@@ -411,8 +447,20 @@ nav .logo {
         font-size: 24px !important
     }
 
-    .hero-title {
-        font-size: 40px !important
+    .hero-title .ht-m {
+        font-size: 50px !important;
+    }
+
+    .hero-title .ht-m1 {
+        font-size: 35px !important;
+    }
+
+    .hero-title .ht-m2 {
+        font-size: 40px !important;
+    }
+
+    .hero-text {
+        font-size: 20px !important;
     }
 
     .hero-container button {
@@ -420,7 +468,7 @@ nav .logo {
     }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 491px) {
     .navbar a {
         display: none;
     }
@@ -443,13 +491,40 @@ nav .logo {
         font-size: 20px !important
     }
 
-    .hero-title {
-        font-size: 36px !important
+    .hero-title .ht-m {
+        font-size: 45px !important;
     }
 
-    .hero-container>div button,
-    .hero-container>div a {
+    .hero-title .ht-m1 {
+        font-size: 30px !important;
+    }
+
+    .hero-title .ht-m2 {
+        font-size: 35px !important;
+    }
+
+    .hero-text {
+        font-size: 16px !important;
+    }
+
+    .hero-container .banner-button button,
+    .hero-container .banner-button a {
         font-size: 12px !important
+    }
+}
+
+
+@media(max-width:440px) {
+    .hero-title .ht-m {
+        font-size: 40px !important;
+    }
+
+    .hero-title .ht-m1 {
+        font-size: 25px !important;
+    }
+
+    .hero-title .ht-m2 {
+        font-size: 30px !important;
     }
 }
 
@@ -486,10 +561,6 @@ nav .logo {
     .content {
         background: linear-gradient(rgba(1, 0, 5, 0.2), rgba(4, 1, 17, 0.4));
     }
-
-    /* .hero-container {
-        padding-top: 220px;
-    } */
 }
 
 @media(max-width:420px) {
@@ -498,8 +569,16 @@ nav .logo {
         padding-top: 200px;
     } */
 
-    .hero-title {
-        font-size: 36px !important;
+    .hero-title .ht-m {
+        font-size: 40px !important;
+    }
+
+    .hero-title .ht-m1 {
+        font-size: 25px !important;
+    }
+
+    .hero-title .ht-m2 {
+        font-size: 30px !important;
     }
 
     .hero-text {
@@ -508,13 +587,45 @@ nav .logo {
 
 }
 
-@media(max-width:375px) {
-    .hero-title {
-        font-size: 34px !important;
+@media(max-width:391px) {
+
+    /* .hero-container {
+        padding-top: 200px;
+    } */
+
+    .hero-title .ht-m {
+        font-size: 35px !important;
+    }
+
+    .hero-title .ht-m1 {
+        font-size: 25px !important;
+    }
+
+    .hero-title .ht-m2 {
+        font-size: 30px !important;
     }
 
     .hero-text {
         font-size: 14px !important;
+    }
+
+}
+
+@media(max-width:375px) {
+    .hero-title .ht-m {
+        font-size: 30px !important;
+    }
+
+    .hero-title .ht-m1 {
+        font-size: 20px !important;
+    }
+
+    .hero-title .ht-m2 {
+        font-size: 25px !important;
+    }
+
+    .hero-text {
+        font-size: 12px !important;
     }
 
     .banner-btn {
@@ -602,116 +713,6 @@ nav .logo {
     display: none;
 }
 
-/* Steam From Handi */
-
-@keyframes steam {
-    0% {
-        opacity: 0.2;
-        transform: translateY(0) scale(1);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(-150px) scale(1.5);
-    }
-}
-
-.steam {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    width: 100px;
-    height: 200px;
-    background: url('./Images/steam.jpg') repeat;
-    opacity: 0.2;
-    animation: steam 3s infinite;
-    transform-origin: bottom center;
-}
-
-.steam:nth-child(2) {
-    left: 45%;
-    animation-duration: 3.5s;
-    animation-delay: 0.5s;
-}
-
-.steam:nth-child(3) {
-    left: 55%;
-    animation-duration: 4s;
-    animation-delay: 1s;
-}
-
-/* Sticky Order Buttons */
-.order-buttons {
-    display: none !important;
-    position: fixed;
-    z-index: 9999;
-    top: 50%;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    transform: translateY(-50%);
-}
-
-/* Individual Order Button */
-.order-button {
-    display: flex;
-    align-items: center;
-    margin: 5px 0;
-    width: 50px;
-    /* Initially small */
-    overflow: hidden;
-    border-radius: 25px 0 0 25px;
-    transition: width 0.4s ease-in-out;
-}
-
-/* Expand on Hover */
-.order-button:hover {
-    width: 200px;
-}
-
-/* Icon Container */
-.icon-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    flex-shrink: 0;
-}
-
-/* Swiggy Colors */
-.swiggy {
-    background: #f78820;
-}
-
-/* Zomato Colors */
-.zomato {
-    background: #cc202e;
-}
-
-/* Order Icon */
-.icon-container img {
-    width: 30px;
-    height: 30px;
-}
-
-/* Order Text */
-.order-text {
-    color: #fff;
-    font-size: 14px;
-    padding: 10px;
-    white-space: nowrap;
-    font-weight: bold;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-/* Show text on hover */
-.order-button:hover .order-text {
-    opacity: 1;
-}
 
 @media(max-width:1140px) {
 
