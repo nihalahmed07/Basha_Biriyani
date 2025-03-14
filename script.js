@@ -128,12 +128,9 @@ document.querySelectorAll('.order-btn').forEach((button) => {
 });
 
 // Function to go to cart
-function goToCart() {
-    window.location.href = 'cart.html'; // Ensure this matches the filename of your cart page
-}
-function goToTrackOrder() {
-    window.location.href = 'track order.html'; // Redirect to track order page
-}
+// function goToCart() {
+//     window.location.href = 'cart.html'; // Ensure this matches the filename of your cart page
+// }
 
 // Initial calculation of total on page load
-calculateTotal();
+// calculateTotal();
