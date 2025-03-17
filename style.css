@@ -585,7 +585,7 @@ nav .logo {
     }
 }
 
-@media(max-width:420px) {
+@media(max-width:425px) {
 
     .hero-container {
         margin-top: 100px !important;
@@ -612,8 +612,8 @@ nav .logo {
     }
 
     .hero-title-img {
-        height: 250px;
-        width: 250px;
+        height: 250px !important;
+        width: 250px !important;
     }
 
     .banner-button {
@@ -623,10 +623,6 @@ nav .logo {
 }
 
 @media(max-width:391px) {
-
-    /* .hero-container {
-        padding-top: 200px;
-    } */
 
     .hero-title .ht-m {
         font-size: 35px !important;
