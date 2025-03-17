@@ -259,6 +259,10 @@ nav .logo {
     background: #1c8adb;
 }
 
+.whatsapp {
+    background: #26d367;
+}
+
 /* Hover Effect */
 .full-screen-box:hover {
     transform: scale(1.05);
