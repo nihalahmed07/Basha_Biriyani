@@ -255,6 +255,10 @@ nav .logo {
     background: #e23744;
 }
 
+.phone {
+    background: #1c8adb;
+}
+
 /* Hover Effect */
 .full-screen-box:hover {
     transform: scale(1.05);
@@ -608,7 +612,7 @@ nav .logo {
     }
 
     .banner-button {
-        padding: 0px 0px 40px;
+        padding-top: 45px !important;
     }
 
 }
