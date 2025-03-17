@@ -578,9 +578,9 @@ nav .logo {
 
 @media(max-width:420px) {
 
-    /* .hero-container {
-        padding-top: 200px;
-    } */
+    .hero-container {
+        margin-top: 200px !important;
+    }
 
     .hero-title .ht-m {
         font-size: 40px !important;
