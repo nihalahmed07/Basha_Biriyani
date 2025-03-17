@@ -147,6 +147,19 @@ nav .logo {
 
 .hero-title {
     font-family: 'Bebas Neue', sans-serif;
+    display: none;
+}
+
+.hero-title-img {
+    height: 300px;
+    width: 300px;
+    margin: 10px 0px;
+}
+
+.hero-title-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .hero-text {
