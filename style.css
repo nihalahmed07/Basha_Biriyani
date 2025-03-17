@@ -617,7 +617,7 @@ nav .logo {
     }
 
     .banner-button {
-        padding-top: 8.5rem !important;
+        padding-top: 150px !important;
     }
 
 }
@@ -680,8 +680,6 @@ nav .logo {
     }
 
 }
-
-/* @media(max-width:350px) {} */
 
 /* Banner2 For desktop/Laptop and Tablet */
 .banner2 {
