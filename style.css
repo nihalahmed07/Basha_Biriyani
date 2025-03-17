@@ -617,7 +617,7 @@ nav .logo {
     }
 
     .banner-button {
-        padding-top: 150px !important;
+        padding-top: 200px !important;
     }
 
 }
@@ -663,10 +663,10 @@ nav .logo {
         font-size: 12px !important;
     }
 
-    .banner-btn {
+    /* .banner-btn {
         font-size: 12px !important;
         padding: 10px 20px !important;
-    }
+    } */
 
     .full-screen-container {
         gap: 20px;
