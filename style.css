@@ -668,7 +668,20 @@ nav .logo {
         padding: 10px 20px !important;
     }
 
+    .full-screen-container {
+        gap: 20px;
+    }
+
+    /* Box Style */
+    .full-screen-box {
+        width: 100px;
+        height: 100px;
+        padding: 15px;
+    }
+
 }
+
+/* @media(max-width:350px) {} */
 
 /* Banner2 For desktop/Laptop and Tablet */
 .banner2 {
