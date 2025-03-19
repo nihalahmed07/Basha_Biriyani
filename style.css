@@ -580,7 +580,7 @@ nav .logo {
     }
 
     .hero-container {
-        margin-top: 100px !important;
+        /* margin-top: 100px !important; */
         height: 100%;
     }
 
@@ -594,11 +594,6 @@ nav .logo {
     }
 
     .hero-text {
-        font-size: 12px !important;
-    }
-
-    .banner-btn {
-        padding: 7px !important;
         font-size: 12px !important;
     }
 }
