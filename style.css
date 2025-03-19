@@ -320,6 +320,12 @@ nav .logo {
     }
 }
 
+@media(max-width:1230px) {
+    .hero-container {
+        margin-bottom: 1rem !important;
+    }
+}
+
 @media (max-width: 1060px) {
 
     .navbar a {
@@ -537,19 +543,7 @@ nav .logo {
 }
 
 
-@media(max-width:440px) {
-    .hero-title .ht-m {
-        font-size: 40px !important;
-    }
 
-    .hero-title .ht-m1 {
-        font-size: 25px !important;
-    }
-
-    .hero-title .ht-m2 {
-        font-size: 30px !important;
-    }
-}
 
 @media (max-width: 430px) {
     nav {
@@ -584,63 +578,29 @@ nav .logo {
     .content {
         background: linear-gradient(rgba(1, 0, 5, 0.2), rgba(4, 1, 17, 0.4));
     }
-}
-
-@media(max-width:425px) {
 
     .hero-container {
         margin-top: 100px !important;
-    }
-
-    .hero-title .ht-m {
-        font-size: 40px !important;
-    }
-
-    .hero-title .ht-m1 {
-        font-size: 25px !important;
-    }
-
-    .hero-title .ht-m2 {
-        font-size: 30px !important;
-    }
-
-    .hero-text {
-        font-size: 16px !important;
+        height: 100%;
     }
 
     .hero-subtitle {
-        font-size: 14px !important;
+        font-size: 12px !important;
     }
 
     .hero-title-img {
-        height: 250px !important;
-        width: 250px !important;
-    }
-
-    .banner-button {
-        padding-top: 145px !important;
-    }
-
-}
-
-@media(max-width:391px) {
-
-    .hero-title .ht-m {
-        font-size: 35px !important;
-    }
-
-    .hero-title .ht-m1 {
-        font-size: 25px !important;
-    }
-
-    .hero-title .ht-m2 {
-        font-size: 30px !important;
+        height: 220px !important;
+        width: 220px !important;
     }
 
     .hero-text {
-        font-size: 14px !important;
+        font-size: 12px !important;
     }
 
+    .banner-btn {
+        padding: 7px !important;
+        font-size: 12px !important;
+    }
 }
 
 @media(max-width:375px) {
