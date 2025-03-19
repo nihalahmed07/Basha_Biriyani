@@ -397,6 +397,28 @@ nav .logo {
         gap: 8px;
         font-size: 13px;
     }
+
+    .hero-container {
+        /* margin-top: 100px !important; */
+        height: 100%;
+    }
+
+    .hero-subtitle {
+        font-size: 16px !important;
+    }
+
+    .hero-title-img {
+        height: 250px !important;
+        width: 250px !important;
+    }
+
+    .hero-text {
+        font-size: 16px !important;
+    }
+
+    .banner {
+        height: 93vh;
+    }
 }
 
 @media (max-width: 825px) {
@@ -415,35 +437,29 @@ nav .logo {
         gap: 8px;
         font-size: 12px;
     }
-
-    .banner {
-        height: 650px;
-    }
 }
 
 @media(max-width:768px) {
     .banner {
-        height: 450px;
+        height: 93vh;
     }
 
     .hero-container {
-        padding-top: 30px
+        /* margin-top: 100px !important; */
+        height: 100%;
     }
 
     .hero-subtitle {
-        font-size: 26px !important
+        font-size: 16px !important;
     }
 
-    .hero-title .ht-m {
-        font-size: 60px !important;
+    .hero-title-img {
+        height: 250px !important;
+        width: 250px !important;
     }
 
-    .hero-title .ht-m1 {
-        font-size: 40px !important;
-    }
-
-    .hero-title .ht-m2 {
-        font-size: 50px !important;
+    .hero-text {
+        font-size: 16px !important;
     }
 
     .banner-button {
@@ -462,6 +478,10 @@ nav .logo {
         padding: 6px 7px;
     }
 
+    .banner {
+        height: 93vh;
+    }
+
     /* Location Section */
     .location-container {
         gap: 8px;
@@ -469,27 +489,21 @@ nav .logo {
     }
 
     .hero-container {
-        padding-top: 30px
+        /* margin-top: 100px !important; */
+        height: 100%;
     }
 
     .hero-subtitle {
-        font-size: 24px !important
+        font-size: 16px !important;
     }
 
-    .hero-title .ht-m {
-        font-size: 50px !important;
-    }
-
-    .hero-title .ht-m1 {
-        font-size: 35px !important;
-    }
-
-    .hero-title .ht-m2 {
-        font-size: 40px !important;
+    .hero-title-img {
+        height: 250px !important;
+        width: 250px !important;
     }
 
     .hero-text {
-        font-size: 20px !important;
+        font-size: 16px !important;
     }
 
     .hero-container button {
@@ -513,23 +527,17 @@ nav .logo {
     }
 
     .hero-container {
-        padding-top: 30px
+        /* margin-top: 100px !important; */
+        height: 100%;
     }
 
     .hero-subtitle {
-        font-size: 20px !important
+        font-size: 16px !important;
     }
 
-    .hero-title .ht-m {
-        font-size: 45px !important;
-    }
-
-    .hero-title .ht-m1 {
-        font-size: 30px !important;
-    }
-
-    .hero-title .ht-m2 {
-        font-size: 35px !important;
+    .hero-title-img {
+        height: 250px !important;
+        width: 250px !important;
     }
 
     .hero-text {
