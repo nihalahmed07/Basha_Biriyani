@@ -314,15 +314,51 @@ nav .logo {
 
 /* Navbar and Banner Adjustments */
 
-@media(max-width:1250px) {
+@media(max-width:1440px) {
+    .hero-container {
+        margin-top: 100px !important;
+        height: 100%;
+    }
+
+    .hero-subtitle {
+        font-size: 20px !important;
+    }
+
+    .hero-title-img {
+        height: 300px !important;
+        width: 300px !important;
+    }
+
+    .hero-text {
+        font-size: 20px !important;
+    }
+
     .banner {
         height: 100vh;
     }
 }
 
-@media(max-width:1230px) {
+@media(max-width:1250px) {
     .hero-container {
-        margin-bottom: 1rem !important;
+        margin-top: 100px !important;
+        height: 100%;
+    }
+
+    .hero-subtitle {
+        font-size: 20px !important;
+    }
+
+    .hero-title-img {
+        height: 300px !important;
+        width: 300px !important;
+    }
+
+    .hero-text {
+        font-size: 20px !important;
+    }
+
+    .banner {
+        height: 100vh;
     }
 }
 
@@ -341,19 +377,23 @@ nav .logo {
     .location-container i {
         font-size: 18px;
     }
-}
 
-@media(max-width: 1025px) {
-    .hero-title .ht-m {
-        font-size: 80px !important;
+    .hero-container {
+        margin-top: 100px !important;
+        height: 100%;
     }
 
-    .hero-title .ht-m1 {
-        font-size: 55px !important;
+    .hero-subtitle {
+        font-size: 20px !important;
     }
 
-    .hero-title .ht-m2 {
-        font-size: 65px !important;
+    .hero-title-img {
+        height: 300px !important;
+        width: 300px !important;
+    }
+
+    .hero-text {
+        font-size: 20px !important;
     }
 }
 
@@ -379,27 +419,9 @@ nav .logo {
     .logo img {
         width: 80px;
     }
-}
-
-@media (max-width: 890px) {
-    nav {
-        height: 60px;
-        padding: 0 45px;
-    }
-
-    .navbar a {
-        font-size: 14px;
-        padding: 7px 10px;
-    }
-
-    /* Location Section */
-    .location-container {
-        gap: 8px;
-        font-size: 13px;
-    }
 
     .hero-container {
-        /* margin-top: 100px !important; */
+        margin-top: 100px !important;
         height: 100%;
     }
 
@@ -418,6 +440,24 @@ nav .logo {
 
     .banner {
         height: 93vh;
+    }
+}
+
+@media (max-width: 890px) {
+    nav {
+        height: 60px;
+        padding: 0 45px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 7px 10px;
+    }
+
+    /* Location Section */
+    .location-container {
+        gap: 8px;
+        font-size: 13px;
     }
 }
 
@@ -445,7 +485,7 @@ nav .logo {
     }
 
     .hero-container {
-        /* margin-top: 100px !important; */
+        margin-top: 100px !important;
         height: 100%;
     }
 
@@ -489,7 +529,7 @@ nav .logo {
     }
 
     .hero-container {
-        /* margin-top: 100px !important; */
+        margin-top: 10px !important;
         height: 100%;
     }
 
